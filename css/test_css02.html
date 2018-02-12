@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  div#sub{
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+    transform: rotateX(45deg);
+  }
+  div#head{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    margin: 50px;
+    padding: 10px;
+    border: 1px solid black;
+    perspective: 150px;
+  }
+  div#tran{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+  }
+  div#tran:hover {
+    background-color: green;
+    opacity: 0.5;
+    transition: 5s;
+    width: 500px;
+    height: 500px;
+  }
+  @keyframes test{
+    0%   {background-color:pink; left:0px; top:0px;}
+   25%  {background-color:yellow; left:200px; top:0px; border-radius: 50px;}
+   50%  {background-color:blue; left:200px; top:200px;}
+   75%  {background-color:green; left:0px; top:200px;}
+   100% {background-color:red; left:0px; top:0px;}
+}
+  div#anime{
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    animation-name: test;
+    animation-duration: 4s;
+     position: relative;
+    animation-iteration-count: infinite;
+  }
+</style>
+</head>
+<body>
+  <div id="head">
+    <div id="sub">
+      TEST NAJA
+    </div>
+  </div>
+  <br>
+  <div id="tran">
+  </div>
+  <br>
+  <br>
+  <br>
+  <div id="anime">
+  </div>
+
+</body>
+</html>
